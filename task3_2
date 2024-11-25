@@ -1,0 +1,21 @@
+use std::io;
+
+fn main() {
+    println!("Введите число:");
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+
+    let n: usize = input.trim().parse().unwrap();
+
+    let mut prev = 0;
+    let mut curr = 1;
+
+    for _ in 0..n {
+        let next = prev + curr;
+        prev = curr;
+        curr = next;
+    }
+
+    println!("ответ: {}", prev);
+}
