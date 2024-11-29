@@ -1,0 +1,6 @@
+[package]
+name = "rust-demo"  # Название вашего проекта
+version = "0.13.0"  # Версия вашего проекта
+edition = "2021"  # Редакция Rust (можно оставить как есть)
+[dependencies]
+itertools = "0.13.0"
